@@ -61,3 +61,18 @@ def decrypt(msg):
   
     return decipher 
 
+def main():
+    print('1. encrypt')
+    print('2. decrypt')
+    option = input("$ ")
+    
+    if option == '1' or option == 'encrypt':
+        text = input("$ ")
+        print(encrypt(text))
+
+    if option == '2' or option == 'decrypt':
+        code = input("$ ")
+        print(decrypt(code))
+
+
+    
