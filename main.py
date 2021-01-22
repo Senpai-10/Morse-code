@@ -67,11 +67,11 @@ def main():
     option = input("$ ")
     
     if option == '1' or option == 'encrypt':
-        text = input("$ ")
+        text = input("text $ ")
         print(encrypt(text))
 
     if option == '2' or option == 'decrypt':
-        code = input("$ ")
+        code = input("morse code $ ")
         print(decrypt(code))
 
 
