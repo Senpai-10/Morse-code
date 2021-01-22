@@ -4,6 +4,5 @@
 
 <br>
 
-## install
- 
-- Download **Morse.exe** From [...]()
+
+Download **Morse.exe** From [release v1.0](https://github.com/Senpai-10/Morse-code/releases/tag/v1.0)
