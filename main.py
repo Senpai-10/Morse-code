@@ -75,4 +75,5 @@ def main():
         print(decrypt(code))
 
 
-    
+if __name__ == "__main__":
+    main()
