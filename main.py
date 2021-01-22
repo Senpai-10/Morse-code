@@ -10,6 +10,7 @@ MORSE_CODE_DICT = {
     'R':'.-.', 'S':'...', 'T':'-', 
     'U':'..-', 'V':'...-', 'W':'.--', 
     'X':'-..-', 'Y':'-.--', 'Z':'--..', 
+
     '1':'.----', '2':'..---', '3':'...--', 
     '4':'....-', '5':'.....', '6':'-....', 
     '7':'--...', '8':'---..', '9':'----.', 
@@ -31,5 +32,28 @@ def encrypt(msg):
 
 # decrypt the string from morse to english 
 def decrypt(msg):
-    ...
+    msg += ' '
+  
+    decipher = '' 
+    citext = '' 
+    for letter in msg: 
+  
+        if (letter != ' '): 
+  
+            i = 0
+            citext += letter 
+
+        else: 
+            i += 1
+  
+            if i == 2 : 
+  
+                decipher += ' '
+            else: 
+  
+                decipher += list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT 
+                .values()).index(citext)] 
+                citext = ''
+  
+    return decipher 
 
